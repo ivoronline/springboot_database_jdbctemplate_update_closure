@@ -18,8 +18,8 @@ public class MyController {
   @ResponseBody
   @GetMapping("/update")
   public int update() {
-    int    updatedRecords = myService.update("John New2", "John", 10);
-    return updatedRecords;
+    int    success = myService.update("John New2", "John", 10);
+    return success;
   }
 
 }
